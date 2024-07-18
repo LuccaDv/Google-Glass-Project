@@ -18,16 +18,18 @@ p {
 
 /* Formatação tabela de especificações no corpo do texto*/
 
-table#especificacoes {
-  border: 1px #606060;
+table#tabelaespec {
+  border: 1px solid #606060;
   border-spacing: 0px;
   margin-left: auto;
   margin-right: auto;
 }
 
-table#especificacoes td {
-  border: 1px #606060;
+table#tabelaespec td {
+  border: 1px solid #606060;
   padding: 10px;
+  text-align: center;
+  vertical-align: center;
 }
 
 /* Formatação da interface (Folha central da página)*/
@@ -146,34 +148,35 @@ nav#menu a:hover {
 section#principal {
   display: block;
   float: left;
-  width: 700px;
+  width: 770px;
   border-right: 1px solid #606060;
   padding-right: 15px;
   padding-left: 15px;
-  background-color: red;
 }
 
 aside#lateral {
   display: block;
   float: right;
-  width: 350px;
-  background-color: aqua;
+  width: 480px;
+  padding: 10px;
 }
 
-footer#rodape p {
+footer#rodape p#primeiro {
   clear: both;
+  text-align: center;
   border-top: 1px solid #606060;
   padding-top: 10px;
-  background-color: orange;
-  text-align: center;
 }
 
-/* footer#rodape p {
-
+footer#rodape p#link {
+  clear: both;
   text-align: center;
-} */
+  margin-top: -15px;
+}
 
 footer#rodape a {
+  clear: both;
+  text-align: center;
   color: black;
   text-decoration: none;
 }
@@ -181,4 +184,5 @@ footer#rodape a {
 footer#rodape a:hover {
   text-decoration: underline;
   font-weight: bold;
+  text-align: center;
 }

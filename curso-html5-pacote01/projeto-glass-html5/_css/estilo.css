@@ -9,6 +9,7 @@
 body {
   background-color: #ffffff;
   color: rgba(0, 0, 0, 1);
+  font-family: 'Times New Roman', sans-serif;
 }
 
 p {
@@ -30,6 +31,32 @@ table#tabelaespec td {
   padding: 10px;
   text-align: center;
   vertical-align: center;
+}
+
+table#tabelaespec td.left {
+  color: white;
+  background-color: #606060;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+table#tabelaespec td.right {
+  background-color: #cecece;
+}
+
+table#tabelaespec caption {
+  color: #808080;
+  font-size: 15pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+table#tabelaespec caption span {
+  display: block;
+  float: right;
+  color: black;
+  font-size: 10pt;
+  margin-top: 8px;
 }
 
 /* Formatação da interface (Folha central da página)*/
@@ -152,6 +179,7 @@ section#principal {
   border-right: 1px solid #606060;
   padding-right: 15px;
   padding-left: 15px;
+  margin: auto;
 }
 
 aside#lateral {
@@ -159,6 +187,23 @@ aside#lateral {
   float: right;
   width: 480px;
   padding: 10px;
+  background-color: #dddddd;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .5 );
+  margin-top: 10px;
+}
+
+aside#lateral h1 {
+font-family: 'FonteLogo' sans-serif;
+font-size: 20pt;
+color: #606060;
+}
+
+aside#lateral h2 {
+  font-size: 12pt;
+  color: #474545;
+  background-color: #dddddd;
+  padding: 5px 5px 5px 5px;
+  margin: 10px 0px 10px 0px;
 }
 
 footer#rodape p#primeiro {
@@ -185,4 +230,38 @@ footer#rodape a:hover {
   text-decoration: underline;
   font-weight: bold;
   text-align: center;
+}
+
+/* Formatação de artigos */
+
+article#noticia h2 {
+  font-size: 12pt;
+  color: #474545;
+  background-color: #dddddd;
+  padding: 5px 5px 5px 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+  font-family: 'FonteLogo' sans-serif;
+  font-size: 20pt;
+  color: #606060;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+  font-size: 10pt;
+  margin-top: 0px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+header#cabecalho-artigo h3 {
+  font-size: 12px;
+}
+
+.article-right {
+  text-align: right;
 }
